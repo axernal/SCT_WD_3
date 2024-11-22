@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #16a085, #3498db);
+    color: #fff;
+}
+
+.name-modal {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+}
+
+.name-modal input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.name-modal button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ecf0f1;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    background: #16a085;
+}
+
+.cell.taken {
+    pointer-events: none;
+    background: #e74c3c !important;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #c0392b;
+    transform: scale(1.1);
+}
